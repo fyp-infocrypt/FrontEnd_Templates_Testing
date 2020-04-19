@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <style>
+        .background{
+            background: rgb(27,46,50);
+            background: radial-gradient(circle, rgba(27,46,50,1) 0%, rgba(18,34,47,1) 60%, rgba(8,21,30,1) 100%);
+        }
+        .header{
+            color:#caf0f9;
+            font-family: 'Megrim', cursive;
+            letter-spacing: 0.5em;
+        }
+        .contain{
+            margin-left: 2.5%;
+            width: 95%;
+            height: 100%;
+        }
+        .pad{
+            padding: 0 0.5em 0 0.5em;
+        }
+        .overlay{
+            background-color: rgba(8,21,30,0.85);
+            border-radius: 50%;
+            height:100px;
+            width: fit-content;
+        }
+        .current{
+            opacity: 1;
+        }
+        img {
+            border-radius: 50%;
+            height:100px;
+            opacity: 0.15;
+        }
+        a{
+            color: inherit;
+        }
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 0.3em;
+            font-size: 2em;
+            color:rgba(202,240,249, 0.5);
+        }
+
+    </style>
+</head>
+<body class="background">
+    <div class="contain">
+        <h1 class="header center-align">INFOCRYPT</h1>
+        <div class="pad row card" style="height: 710px">
+
+            <div class="col s12 center-align">
+                <br>
+                <div class="col s2">
+                    <div class="overlay">
+                        <img src="img_avatar.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+                <div class="col s2">
+                    <div class="overlay">
+                        <img src="img_avatar.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+                <div class="col s2">
+                    <div>
+                        <img class="current" src="img_avatar.png" alt="Avatar" class="image">
+                        </div>
+                </div>
+                <div class="col s2">
+                        <img src="img_avatar.png" alt="Avatar" class="image">
+                </div>
+                <div class="col s2">
+                    <div>
+                        <img src="img_avatar.png" alt="Avatar" class="image">
+                        </div>
+                </div>
+                <div class="col s2">
+                    <div>
+                    <img src="img_avatar.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s12" style="height: 450px">           
+                <hr>
+            </div>
+            <br>
+        </div>
+        <br><br>
+    </div>
+    <footer><a href="#"><i class="fa fa-info-circle"></i></a></footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
